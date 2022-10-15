@@ -15,6 +15,8 @@ def encode(x,v):
 		k=k+1
 	print("The value of ns is:",ns)
 	rev=""
+	if ns[len(ns)-1] != '-':
+		rev = rev+ns[i]
 	for i in range (len(ns)-2,-1,-1):
 		rev=rev+ns[i]
 	print("The value of rev is:",rev)
